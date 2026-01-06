@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-export function Header({ lang }: { lang: string }) {
+export function Header({ lang, dict }: { lang: string; dict: any }) {
     return (
         <motion.header
             initial={{ y: -100, opacity: 0 }}
@@ -22,7 +22,7 @@ export function Header({ lang }: { lang: string }) {
                     className="rounded-full shadow-lg border border-polis-accent/20"
                 />
                 <span className="font-bold text-xl tracking-wider text-white hidden sm:block">
-                    POLIS <span className="text-polis-accent">PROTOCOL</span>
+                    POLIS <span className="text-polis-accent">{dict.protocol}</span>
                 </span>
             </Link>
 
@@ -34,7 +34,7 @@ export function Header({ lang }: { lang: string }) {
                     {lang === "en" ? "GR" : "EN"}
                 </Link>
                 <button className="bg-polis-accent text-polis-primary px-6 py-2 rounded-full font-bold text-sm hover:scale-105 transition-transform">
-                    JOIN
+                    {dict.join}
                 </button>
             </nav>
         </motion.header>

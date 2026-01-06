@@ -9,17 +9,16 @@ const STEPS = [
     { id: "SVI", label: "SVI", desc: "Social Value Index" },
 ];
 
-export function Architecture() {
+export function Architecture({ dict }: { dict: any }) {
     return (
         <section className="py-24 relative">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-20">
-                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 uppercase tracking-[0.2em]">The Architecture</h2>
-                    <p className="text-white/40 tracking-widest text-sm">ENCRYPTION | ECONOMY | ETHOS</p>
+                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 uppercase tracking-[0.2em]">{dict.title}</h2>
+                    <p className="text-white/40 tracking-widest text-sm uppercase">{dict.subtitle}</p>
                 </div>
 
                 <div className="relative max-w-5xl mx-auto">
-                    {/* Connector Line */}
                     <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-polis-accent/30 to-transparent -translate-y-1/2 hidden md:block" />
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">

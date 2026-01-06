@@ -1,0 +1,47 @@
+{
+    "header": {
+        "protocol": "PROTOCOL",
+        "join": "JOIN"
+    },
+    "hero": {
+        "title_part1": "THE OPERATING SYSTEM",
+        "title_part2": "FOR HUMAN FLOURISHING",
+        "subtitle": "Bridging ancient wisdom with digital infrastructure to architect a future of care, trust, and shared prosperity.",
+        "cta_primary": "Enter the Protocol",
+        "cta_secondary": "Read the Vision"
+    },
+    "deficits": {
+        "title": "THE DEFICITS",
+        "wisdom": {
+            "title": "Wisdom",
+            "desc": "Systemic inability to integrate historical knowledge into future governance."
+        },
+        "care": {
+            "title": "Care",
+            "desc": "The erosion of social fabrics and the commodification of human connection."
+        },
+        "trust": {
+            "title": "Trust",
+            "desc": "Fragile institutions failing to provide verifiable truth in a digital age."
+        }
+    },
+    "architecture": {
+        "title": "The Architecture",
+        "subtitle": "ENCRYPTION | ECONOMY | ETHOS"
+    },
+    "library": {
+        "vision": "THE VISION",
+        "resources": "Library Resources",
+        "protocol_foundations": "THE PROTOCOL FOUNDATIONS",
+        "download_desc": "Download the comprehensive architectural guide to the Polis Protocol. A synthesis of philosophical framework and technical specification.",
+        "download_button": "DOWNLOAD PDF"
+    },
+    "footer": {
+        "join_title": "JOIN THE FEDERATION",
+        "join_desc": "Be the first to receive updates on architectural milestones and the protocol launch.",
+        "placeholder": "architect@polisprotocol.org",
+        "join_button": "JOIN",
+        "copyright": "© 2026 POLIS PROTOCOL FOUNDATION. ALL RIGHTS RESERVED.",
+        "motto": "BUILT ON THE EDGE. ANCIENT WISDOM, DIGITAL FUTURE."
+    }
+}

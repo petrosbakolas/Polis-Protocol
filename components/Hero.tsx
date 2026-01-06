@@ -3,10 +3,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-export function Hero() {
+export function Hero({ dict }: { dict: any }) {
     return (
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-            {/* Animated Background */}
             <div className="absolute inset-0 z-0">
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-polis-accent/10 rounded-full blur-[120px] animate-pulse" />
                 <div className="absolute top-1/4 left-1/4 w-[400px] h-[400px] bg-blue-500/5 rounded-full blur-[100px]" />
@@ -19,9 +18,9 @@ export function Hero() {
                     transition={{ duration: 1.2, ease: "easeOut" }}
                 >
                     <h1 className="text-5xl md:text-8xl font-black mb-8 leading-tight tracking-tight">
-                        <span className="text-white">THE OPERATING SYSTEM</span>
+                        <span className="text-white">{dict.title_part1}</span>
                         <br />
-                        <span className="text-gradient">FOR HUMAN FLOURISHING</span>
+                        <span className="text-gradient">{dict.title_part2}</span>
                     </h1>
                 </motion.div>
 
@@ -31,7 +30,7 @@ export function Hero() {
                     transition={{ delay: 0.5, duration: 1 }}
                     className="text-xl md:text-2xl text-white/60 max-w-3xl mx-auto mb-12 font-light leading-relaxed"
                 >
-                    Bridging ancient wisdom with digital infrastructure to architect a future of care, trust, and shared prosperity.
+                    {dict.subtitle}
                 </motion.p>
 
                 <motion.div
@@ -41,10 +40,10 @@ export function Hero() {
                     className="flex flex-col sm:flex-row gap-6 justify-center"
                 >
                     <button className="bg-polis-accent text-polis-primary px-10 py-4 rounded-full font-bold text-lg hover:shadow-[0_0_30px_rgba(212,175,55,0.3)] transition-all">
-                        Enter the Protocol
+                        {dict.cta_primary}
                     </button>
                     <button className="glass text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition-all">
-                        Read the Vision
+                        {dict.cta_secondary}
                     </button>
                 </motion.div>
             </div>
