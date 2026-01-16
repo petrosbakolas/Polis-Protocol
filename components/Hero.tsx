@@ -2,8 +2,9 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
-export function Hero({ dict }: { dict: any }) {
+export function Hero({ dict, lang }: { dict: any; lang: string }) {
     return (
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
             <div className="absolute inset-0 z-0">
@@ -20,7 +21,9 @@ export function Hero({ dict }: { dict: any }) {
                     <h1 className="text-5xl md:text-8xl font-black mb-8 leading-tight tracking-tight">
                         <span className="text-white">{dict.title_part1}</span>
                         <br />
-                        <span className="text-gradient">{dict.title_part2}</span>
+                        <span className="text-white">{dict.title_part2}</span>
+                        <br />
+                        <span className="text-gradient">{dict.title_part3}</span>
                     </h1>
                 </motion.div>
 
@@ -39,12 +42,18 @@ export function Hero({ dict }: { dict: any }) {
                     transition={{ delay: 1, duration: 1 }}
                     className="flex flex-col sm:flex-row gap-6 justify-center"
                 >
-                    <button className="bg-polis-accent text-polis-primary px-10 py-4 rounded-full font-bold text-lg hover:shadow-[0_0_30px_rgba(212,175,55,0.3)] transition-all">
+                    <Link
+                        href={`/${lang}/how-it-works`}
+                        className="bg-polis-accent text-polis-primary px-10 py-4 rounded-full font-bold text-lg hover:shadow-[0_0_30px_rgba(212,175,55,0.3)] transition-all text-center"
+                    >
                         {dict.cta_primary}
-                    </button>
-                    <button className="glass text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition-all">
+                    </Link>
+                    <Link
+                        href={`/${lang}/vision`}
+                        className="glass text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition-all text-center"
+                    >
                         {dict.cta_secondary}
-                    </button>
+                    </Link>
                 </motion.div>
             </div>
 

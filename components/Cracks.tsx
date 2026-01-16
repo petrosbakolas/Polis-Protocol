@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-export function Deficits({ dict }: { dict: any }) {
+export function Cracks({ dict }: { dict: any }) {
     const cards = [
         { ...dict.wisdom, icon: "🏛️" },
         { ...dict.care, icon: "💖" },
@@ -15,6 +15,7 @@ export function Deficits({ dict }: { dict: any }) {
             <div className="container mx-auto px-6">
                 <div className="text-center mb-20">
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">{dict.title}</h2>
+                    <p className="text-white/60 text-lg mb-8">{dict.subtitle}</p>
                     <div className="h-1 w-16 bg-polis-accent mx-auto rounded-full" />
                 </div>
 

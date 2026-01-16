@@ -4,15 +4,16 @@ export async function generateStaticParams() {
     return [{ lang: "en" }, { lang: "gr" }];
 }
 
-export default function LocaleLayout({
+export default async function LocaleLayout({
     children,
     params,
 }: {
     children: React.ReactNode;
-    params: { lang: string };
+    params: Promise<{ lang: string }>;
 }) {
+    const { lang } = await params;
     return (
-        <html lang={params.lang}>
+        <html lang={lang}>
             <body className="antialiased">
                 {children}
             </body>

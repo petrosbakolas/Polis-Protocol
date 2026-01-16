@@ -4,44 +4,331 @@
         "join": "JOIN"
     },
     "hero": {
-        "title_part1": "THE OPERATING SYSTEM",
-        "title_part2": "FOR HUMAN FLOURISHING",
-        "subtitle": "Bridging ancient wisdom with digital infrastructure to architect a future of care, trust, and shared prosperity.",
-        "cta_primary": "Enter the Protocol",
+        "title_part1": "DEMOCRACY",
+        "title_part2": "RETURNS.",
+        "title_part3": "UPGRADED.",
+        "subtitle": "From the Agora to the Blockchain. From Athens to the world. 25 centuries of wisdom. Now executable.",
+        "cta_primary": "How Does It Work?",
         "cta_secondary": "Read the Vision"
     },
     "deficits": {
-        "title": "THE DEFICITS",
+        "title": "THE CRACKS",
+        "subtitle": "Three fractures in the foundation. One protocol to seal them.",
         "wisdom": {
-            "title": "Wisdom",
-            "desc": "Systemic inability to integrate historical knowledge into future governance."
+            "title": "Wisdom Deficit",
+            "desc": "AI replaces jobs, but human judgment remains irreplaceable. Who will harness the wisdom of the many?"
         },
         "care": {
-            "title": "Care",
-            "desc": "The erosion of social fabrics and the commodification of human connection."
+            "title": "Care Deficit",
+            "desc": "Millions of hours of invisible labor: parents, caregivers, volunteers. GDP ignores them. Society needs them."
         },
         "trust": {
-            "title": "Trust",
-            "desc": "Fragile institutions failing to provide verifiable truth in a digital age."
+            "title": "Trust Deficit",
+            "desc": "Democracy demands participation, but who trusts the system anymore? Truth is lost in the noise."
         }
     },
     "architecture": {
-        "title": "The Architecture",
-        "subtitle": "ENCRYPTION | ECONOMY | ETHOS"
+        "title": "THE ARCHITECTURE",
+        "subtitle": "Three pillars. One ecosystem.",
+        "aegis": {
+            "title": "AEGIS",
+            "subtitle": "The Privacy Shield",
+            "desc": "Vote without surveillance. Encrypted identity, transparent decisions."
+        },
+        "dual_token": {
+            "title": "DUAL TOKEN",
+            "subtitle": "The Value Engine",
+            "desc": "DemCoin: Earn by participating. CareCoin: Be recognized for caring."
+        },
+        "svi": {
+            "title": "SVI",
+            "subtitle": "Social Value Index",
+            "desc": "Beyond GDP. Measuring what truly matters: wellbeing, not just wealth."
+        }
+    },
+    "tokens": {
+        "title": "TWO TOKENS, ONE MISSION",
+        "subtitle": "Democratic participation and human care finally gain value.",
+        "demcoin": {
+            "name": "DemCoin",
+            "desc": "Earn by voting, deliberating, participating in democracy."
+        },
+        "carecoin": {
+            "name": "CareCoin",
+            "desc": "Be recognized for the care you provide to others."
+        }
     },
     "library": {
         "vision": "THE VISION",
-        "resources": "Library Resources",
-        "protocol_foundations": "THE PROTOCOL FOUNDATIONS",
-        "download_desc": "Download the comprehensive architectural guide to the Polis Protocol. A synthesis of philosophical framework and technical specification.",
-        "download_button": "DOWNLOAD PDF"
+        "subtitle": "For those who want to dive deeper.",
+        "foundations": "FOUNDATIONAL PRINCIPLES",
+        "whitepaper_title": "Technical Whitepaper",
+        "whitepaper_desc": "The complete protocol architecture. For developers and researchers.",
+        "whitepaper_button": "Download PDF",
+        "manifesto_title": "The Manifesto",
+        "manifesto_desc": "The philosophy behind Polis. Why we're building what we're building.",
+        "manifesto_button": "Read"
     },
     "footer": {
         "join_title": "JOIN THE FEDERATION",
-        "join_desc": "Be the first to receive updates on architectural milestones and the protocol launch.",
+        "join_desc": "The revolution starts with one signup.",
         "placeholder": "architect@polisprotocol.org",
         "join_button": "JOIN",
         "copyright": "© 2026 POLIS PROTOCOL FOUNDATION. ALL RIGHTS RESERVED.",
-        "motto": "BUILT ON THE EDGE. ANCIENT WISDOM, DIGITAL FUTURE."
+        "motto": "FROM GREECE, FOR THE WORLD."
+    },
+    "subpages": {
+        "how_it_works": {
+            "title": "How Does It Work?",
+            "summary_title": "The 30-second version:",
+            "summary_text": "You participate in democracy. You get paid. Not metaphorically—actually paid, in a currency backed by real improvements in your community's wellbeing.",
+            "long_version_title": "The slightly longer version:",
+            "intro": "The Polis Protocol creates a new kind of economy where two things that were never valued before—democratic participation and care work—become the source of real wealth.",
+            "steps": [
+                {
+                    "title": "Step 1: You Participate",
+                    "text": "Your village faces a decision: Should we build a seawall or restore natural dunes for coastal protection? You don't just vote. You research. You deliberate with neighbors. You consider evidence. An AI assistant helps you understand complex tradeoffs—privately, without tracking your identity."
+                },
+                {
+                    "title": "Step 2: Quality Gets Measured",
+                    "text": "The system doesn't just count votes. It measures the quality of participation. Did you engage with opposing arguments? Did you consider long-term effects? Did your contributions help the community reach better decisions? This isn't surveillance—it's recognition."
+                },
+                {
+                    "title": "Step 3: You Earn",
+                    "text": "Quality participation earns you DemCoin. Care work—helping an elderly neighbor, volunteering at a community garden, raising children—earns you CareCoin reputation that multiplies your economic power. Both are tied to actual, measured improvements in community wellbeing."
+                },
+                {
+                    "title": "Step 4: Value is Created",
+                    "text": "When your community's health improves, when trust increases, when the environment is protected—the currency supply expands. When things get worse, it contracts. The money itself tracks whether life is actually getting better."
+                }
+            ],
+            "different_title": "What makes this different from everything else?",
+            "different_items": [
+                {
+                    "label": "Not Universal Basic Income",
+                    "text": "You're not paid for existing. You're paid for contributing."
+                },
+                {
+                    "label": "Not Social Credit",
+                    "text": "Your identity is cryptographically protected. No surveillance state."
+                },
+                {
+                    "label": "Not Crypto Speculation",
+                    "text": "Value comes from measured wellbeing, not market gambling."
+                },
+                {
+                    "label": "Not Charity",
+                    "text": "This is economics. Care and wisdom become profitable—by design."
+                }
+            ],
+            "footer_title": "Ready to go deeper?",
+            "footer_links": [
+                {
+                    "label": "Read the Vision",
+                    "href": "/vision"
+                },
+                {
+                    "label": "Explore the Architecture",
+                    "href": "#architecture"
+                },
+                {
+                    "label": "Join the Federation",
+                    "href": "#footer"
+                }
+            ]
+        },
+        "vision": {
+            "title": "The Vision",
+            "subtitle": "We are building Democracy 2.0.",
+            "intro": "Not because democracy failed. But because democracy was traded away—and now we have the tools to reclaim it.",
+            "sections": [
+                {
+                    "title": "The Story They Tell",
+                    "text": "The Western narrative goes like this: Athens invented democracy 2,500 years ago. It worked briefly, then collapsed. Dark Ages followed. Eventually, the Enlightenment \"rediscovered\" democratic ideals and invented representative democracy—elect someone to decide for you. Progress.\n\nThis story is wrong."
+                },
+                {
+                    "title": "The Story We Lived",
+                    "text": "Democracy never died in Greece. It evolved.\n\nWhen Christianity spread through the Greek world, it didn't replace democratic practice—it absorbed it. The word \"Ekklisia\" (Εκκλησία) means both \"Church\" and \"Assembly.\" This is no coincidence. The same gathering that once debated policy in the Agora became the center of both spiritual and civic life. Unity of purpose. Community self-governance continued.\n\nThe Eastern Roman Empire—what the West dismissively calls \"Byzantium\"—was built on self-governed villages and cities. The Emperor's reach stopped at the boundaries of the Ekklisia. Local communities managed their own affairs, made their own decisions, maintained their own justice.\n\nEven under Ottoman rule, this model persisted. The conquerors didn't impose a new system—they adopted ours. Self-governed communities continued for four centuries. The Ottomans involved themselves only in taxation and army recruitment. Everything else remained in the hands of the people.\n\nFor 2,500 years, Greeks lived democracy. Not perfectly. Not without interruption. But continuously."
+                },
+                {
+                    "title": "The Trade We Made",
+                    "text": "Then came the modern Greek state. And with it, a choice.\n\nThe Western powers who supported Greek independence brought their own model: representative democracy. Elect someone to decide for you. Centralized power. Professional politicians.\n\nWe traded 2,500 years of self-governance for an imported system barely fifty years old.\n\nHad Kapodistrias lived longer, perhaps Greece would have developed something like Switzerland—direct democracy, local autonomy, federal structure. Instead, we got parliaments, parties, and the slow erosion of civic participation."
+                },
+                {
+                    "title": "The Crisis of the Imported Model",
+                    "text": "Today, representative democracy is failing everywhere:\n\n- **Trust has collapsed.** Who believes politicians represent them? Who feels their voice matters?\n- **AI is replacing jobs.** What happens when human labor is no longer economically necessary?\n- **Care work remains invisible.** Parents, caregivers, volunteers—none of this counts in GDP.\n\nThe West is discovering what Greeks knew all along: you cannot delegate democracy. You must live it."
+                },
+                {
+                    "title": "The Opportunity We See",
+                    "text": "The same technologies threatening us could restore what we lost.\n\nAI doesn't have to replace humans. It could amplify human wisdom—helping citizens understand complex policy without requiring expertise.\n\nBlockchain doesn't have to be speculation. It could create transparent systems where value flows to those who create it.\n\nCryptography doesn't have to enable surveillance. It could guarantee privacy while enabling accountability."
+                },
+                {
+                    "title": "What We're Building",
+                    "text": "The Polis Protocol is not an invention. It is a restoration—upgraded for the digital age.",
+                    "items": [
+                        {
+                            "label": "Privacy-First AI Assistance.",
+                            "text": "Your AI assistant knows your context but that information never leaves your device. The cloud cannot identify you—not through promises, but through mathematical impossibility."
+                        },
+                        {
+                            "label": "Value-Creating Currency.",
+                            "text": "DemCoin is backed by measured improvements in human wellbeing. When your community flourishes, currency is minted. When it suffers, supply contracts. Money finally tracks whether life is getting better."
+                        },
+                        {
+                            "label": "Recognition for Care.",
+                            "text": "CareCoin makes visible what was always invisible. The grandmother, the volunteer, the neighbor holding community together. Their work creates value—now they receive recognition."
+                        }
+                    ]
+                },
+                {
+                    "title": "The Greece Connection",
+                    "text": "We build this from Greece because this is where democracy lived for 2,500 years. Not in theory. In practice. In villages and churches and community gatherings that persisted through empires and occupations.\n\nThe birthplace of democracy reclaims its heritage—upgraded."
+                }
+            ],
+            "invitation_title": "The Invitation",
+            "invitation_text": "We're not asking you to believe us. We're asking you to join us—to test these ideas, to find their flaws, to make them better.\n\nDemocracy was never a gift from above. It was always built from below.",
+            "motto": "Democracy returns. Upgraded."
+        },
+        "aegis": {
+            "title": "AEGIS: The Privacy Shield",
+            "intro": "The paradox: To help you effectively, AI needs to know everything about you. But if AI knows everything about you, you're under surveillance.\n\nOur solution: AI knows everything about you—but that AI lives only on your device.",
+            "sections": [
+                {
+                    "title": "How It Works",
+                    "items": [
+                        {
+                            "label": "Layer 1: Your Local AI Agent",
+                            "text": "A small but capable AI runs directly on your phone or computer. It has complete access to your participation history, your care work records, your deliberation contributions. It knows you as well as a trusted advisor would.\n\nThis data never leaves your device. Not to our servers. Not to any cloud. Nowhere."
+                        },
+                        {
+                            "label": "Layer 2: Anonymous Cloud Assistance",
+                            "text": "Sometimes you need analysis that's too complex for on-device processing. When that happens, your local AI strips all identifying information from your query. It removes your name, location, writing style—anything that could fingerprint you.\n\nThe anonymized query travels through privacy-preserving networks (like Tor) to reach sophisticated cloud AI. The cloud AI sees: \"A citizen is evaluating coastal protection options.\" It does not see: \"Petros Bakolas from Preveza is researching seawalls.\""
+                        },
+                        {
+                            "label": "Layer 3: Cryptographic Guarantees",
+                            "text": "Zero-knowledge proofs let you prove things without revealing them. You can prove you're eligible to vote without revealing your identity. You can prove you have care work experience without revealing whose care you provided.\n\nThis isn't policy (\"we promise not to look\"). This is mathematics (\"we literally cannot look\")."
+                        }
+                    ]
+                }
+            ],
+            "why_matters_title": "Why This Matters",
+            "why_matters_text": "In current systems, every time you ask AI for help, you create a record that can be:\n- Sold to advertisers\n- Subpoenaed by governments\n- Leaked in data breaches\n- Used to manipulate you\n\nIn Aegis, you get better AI assistance (because your local agent knows your full context) with zero surveillance risk (because identifying data never leaves your control).",
+            "footer_text": "Your data. Your device. Your democracy."
+        },
+        "dual_token": {
+            "title": "The Dual Token System: DemCoin & CareCoin",
+            "intro": "One mission. Two currencies. Complete alignment.\n\nThe Polis Protocol uses two complementary tokens, each recognizing a different kind of value that current economies ignore.",
+            "demcoin": {
+                "title": "DemCoin: Get Paid to Participate",
+                "what_is": "What it is: A currency you earn through quality democratic participation.",
+                "how_earn_list": [
+                    "Researching policy proposals",
+                    "Deliberating with fellow citizens",
+                    "Considering evidence and counterarguments",
+                    "Contributing to decisions that improve community outcomes"
+                ],
+                "quality_text": "AI systems (running locally, preserving your privacy) assess the depth and quality of your engagement. Did you just rubber-stamp? Or did you actually wrestle with the complexity?",
+                "why_works": "DemCoin is tied to the Social Value Index (SVI). When community wellbeing improves, new currency is minted and distributed to those who contributed to good decisions. When things get worse, the supply contracts.\n\nThis means wise governance is profitable. For the first time, making good decisions for your community directly increases your economic wealth."
+            },
+            "carecoin": {
+                "title": "CareCoin: Recognition for Care",
+                "what_is": "What it is: A non-transferable reputation that multiplies your economic power.",
+                "how_earn_list": [
+                    "Caring for children, elderly, or disabled family members",
+                    "Volunteering in your community",
+                    "Environmental restoration",
+                    "Teaching and mentoring",
+                    "Any work that creates value but isn't paid by the market"
+                ],
+                "different_text": "CareCoin is not a currency you spend. It's living reputation:",
+                "different_items": [
+                    {
+                        "label": "Non-transferable",
+                        "text": "You can't sell it or give it away"
+                    },
+                    {
+                        "label": "Decaying",
+                        "text": "It diminishes over time (about 20% yearly), requiring ongoing contribution"
+                    },
+                    {
+                        "label": "Multiplying",
+                        "text": "It increases your purchasing power when spending DemCoin"
+                    }
+                ],
+                "why_matters": "A grandmother caring for her disabled grandson finally receives economic recognition. Not charity—recognition of value she actually creates. Her care work measurably improves health outcomes, family stability, and community wellbeing. The system sees this and rewards it."
+            },
+            "together_title": "How They Work Together",
+            "together_intro": "You need both tokens to thrive in the Polis economy:",
+            "together_items": [
+                {
+                    "label": "DemCoin without CareCoin",
+                    "text": "You can participate in governance, but your economic power is limited"
+                },
+                {
+                    "label": "CareCoin without DemCoin",
+                    "text": "You're recognized for care, but have no voice in how the system evolves"
+                }
+            ],
+            "together_footer": "This creates a virtuous cycle: Governance teaches you to think systematically. Care work grounds you in real human needs. You become a better citizen by doing both.\n\nWisdom and care, finally valued."
+        },
+        "svi": {
+            "title": "SVI: The Social Value Index",
+            "intro": "What if we measured what actually matters?\n\nGDP measures transactions. A car crash increases GDP (hospital bills, repairs, legal fees). Cancer treatment increases GDP. Divorce increases GDP. War increases GDP spectacularly.\n\nMeanwhile, GDP is blind to what makes life worth living. A grandmother caring for her grandchild? Zero GDP. A community garden feeding families? Minimal GDP. Friends gathering to make music? Zero GDP.\n\nWe're optimizing for the wrong metric.",
+            "dimensions_title": "The Four Dimensions of Flourishing",
+            "dimensions_intro": "SVI measures wellbeing across four interconnected dimensions:",
+            "dimensions": [
+                {
+                    "title": "Economic",
+                    "items": [
+                        "Median household income (not averages skewed by billionaires)",
+                        "Employment quality (secure, dignified, adequately paid)",
+                        "Wealth distribution (is prosperity shared or hoarded?)",
+                        "Local production capacity (can we make what we need?)"
+                    ]
+                },
+                {
+                    "title": "Social",
+                    "items": [
+                        "Trust levels between citizens",
+                        "Community cohesion and mutual aid",
+                        "Mental health and absence of loneliness",
+                        "Health outcomes and life expectancy"
+                    ]
+                },
+                {
+                    "title": "Ecological",
+                    "items": [
+                        "Air and water quality",
+                        "Biodiversity and ecosystem health",
+                        "Carbon balance",
+                        "Regenerative capacity"
+                    ]
+                },
+                {
+                    "title": "Civic",
+                    "items": [
+                        "Quality of democratic deliberation",
+                        "Freedom from corruption",
+                        "Genuine participation rates",
+                        "Policy effectiveness"
+                    ]
+                }
+            ],
+            "changes_title": "How SVI Changes Everything",
+            "changes_intro": "In the Polis economy, currency is minted when SVI improves. This isn't metaphor—it's code.",
+            "scenarios": [
+                {
+                    "title": "Scenario A: Extractive Development",
+                    "text": "A factory promises 5% GDP growth but brings pollution, low wages, and wealth extraction to distant shareholders. Under GDP metrics, this is \"success.\"\n\nUnder SVI: Economic dimension shows modest gains. Social dimension shows decline (health impacts, weakened community). Ecological dimension shows significant decline. Overall SVI falls. Currency contracts. Those who supported this policy lose wealth."
+                },
+                {
+                    "title": "Scenario B: Regenerative Development",
+                    "text": "A cooperative network uses clean technology, pays living wages, reinvests locally. GDP growth is only 2%—\"failure\" by traditional metrics.\n\nUnder SVI: All four dimensions show improvement. Overall SVI rises. Currency expands. Those who supported this policy gain wealth."
+                }
+            ],
+            "insight_title": "The Key Insight",
+            "insight_text": "SVI makes sustainability profitable. Not through regulation, not through moral appeals, but through direct economic incentive.\n\nWhen your money itself tracks whether life is getting better, extractive behavior becomes economically irrational. Cooperation becomes the optimal strategy. Long-term thinking pays off immediately.",
+            "footer": "We stop measuring activity and start measuring flourishing."
+        }
     }
 }
