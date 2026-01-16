@@ -40,12 +40,15 @@ export function Library({ dict, lang }: { dict: any; lang: string }) {
                         <p className="text-white/60 mb-10 text-lg leading-relaxed">
                             {dict.whitepaper_desc}
                         </p>
-                        <button className="bg-white text-polis-primary px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-4 hover:bg-polis-accent transition-colors w-full sm:w-auto">
+                        <Link
+                            href={`/${lang}/builders`}
+                            className="bg-white text-polis-primary px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-4 hover:bg-polis-accent transition-colors w-full sm:w-auto"
+                        >
                             <span className="whitespace-nowrap">{dict.whitepaper_button}</span>
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0">
                                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
                             </svg>
-                        </button>
+                        </Link>
                     </motion.div>
                 </div>
             </div>

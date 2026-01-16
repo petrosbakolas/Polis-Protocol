@@ -31,7 +31,7 @@
         "title": "THE ARCHITECTURE",
         "subtitle": "Three pillars. One ecosystem.",
         "aegis": {
-            "title": "AEGIS",
+            "title": "AEGIS (THE STEALTH MODE)",
             "subtitle": "The Privacy Shield",
             "desc": "Vote without surveillance. Encrypted identity, transparent decisions."
         },
@@ -50,11 +50,11 @@
         "title": "TWO TOKENS, ONE MISSION",
         "subtitle": "Democratic participation and human care finally gain value.",
         "demcoin": {
-            "name": "DemCoin",
+            "name": "DemCoin (Governance XP)",
             "desc": "Earn by voting, deliberating, participating in democracy."
         },
         "carecoin": {
-            "name": "CareCoin",
+            "name": "CareCoin (Social Mana)",
             "desc": "Be recognized for the care you provide to others."
         }
     },
@@ -329,6 +329,34 @@
             "insight_title": "The Key Insight",
             "insight_text": "SVI makes sustainability profitable. Not through regulation, not through moral appeals, but through direct economic incentive.\n\nWhen your money itself tracks whether life is getting better, extractive behavior becomes economically irrational. Cooperation becomes the optimal strategy. Long-term thinking pays off immediately.",
             "footer": "We stop measuring activity and start measuring flourishing."
+        },
+        "builders": {
+            "title": "THE FOUNDRY",
+            "subtitle": "Enter the Simulation.",
+            "hero_headline": "Build the Game that Fixes Reality.",
+            "hero_subhead": "Gamifying the SVI. Turning Civic Duty into XP. Join the Core Team.",
+            "stack_title": "THE STACK",
+            "stack_items": [
+                {
+                    "title": "Unity / Unreal Engine",
+                    "subtitle": "The Interface",
+                    "desc": "Build the immersive front-end for the Sophia Simulator. Transform data into worlds."
+                },
+                {
+                    "title": "Zero-Knowledge Proofs",
+                    "subtitle": "The Player ID",
+                    "desc": "Powered by Aegis (The Stealth Mode). Full anonymity, zero surveillance, total accountability."
+                },
+                {
+                    "title": "Smart Contracts",
+                    "subtitle": "The Loot",
+                    "desc": "DemCoin (Governance XP) and CareCoin (Social Mana). Reward participation with on-chain value."
+                }
+            ],
+            "quest_title": "YOUR QUEST",
+            "quest_desc": "Build the UI for the Sophia Simulator.",
+            "cta_fork": "Fork the Repo",
+            "cta_discord": "Join Discord"
         }
     }
 }

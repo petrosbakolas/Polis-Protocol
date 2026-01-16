@@ -28,6 +28,12 @@ export function Header({ lang, dict }: { lang: string; dict: any }) {
 
             <nav className="flex items-center gap-4 sm:gap-6">
                 <Link
+                    href={`/${lang}/builders`}
+                    className="text-xs font-bold text-polis-accent hover:text-white transition-colors uppercase tracking-[0.2em] hidden md:block"
+                >
+                    Foundry
+                </Link>
+                <Link
                     href={`/${lang === "en" ? "gr" : "en"}`}
                     className="text-sm font-semibold hover:text-polis-accent transition-colors uppercase tracking-widest"
                 >
