@@ -2,8 +2,9 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { Dictionary } from "@/app/types/dictionary";
 
-export function BuildersContent({ content }: { content: any }) {
+export function BuildersContent({ content }: { content: Dictionary["subpages"]["builders"] }) {
     return (
         <div className="space-y-24">
             {/* Hero / Mission */}
@@ -27,7 +28,7 @@ export function BuildersContent({ content }: { content: any }) {
                     {content.stack_title}
                 </h3>
                 <div className="grid md:grid-cols-3 gap-8">
-                    {content.stack_items.map((item: any, i: number) => (
+                    {content.stack_items.map((item, i) => (
                         <motion.div
                             key={i}
                             initial={{ opacity: 0, y: 20 }}

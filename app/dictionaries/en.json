@@ -70,10 +70,14 @@
         "manifesto_button": "Read"
     },
     "footer": {
-        "join_title": "JOIN THE FEDERATION",
-        "join_desc": "The revolution starts with one signup.",
-        "placeholder": "architect@polisprotocol.org",
-        "join_button": "JOIN",
+        "oracle_title": "THE ORACLE",
+        "oracle_placeholder": "Ask the Protocol... (e.g., How does CareCoin solve inflation?)",
+        "simulations_label": "RUN THE SIMULATIONS",
+        "simulation_demcoin": "DemCoin Game Theory",
+        "simulation_text": "Text Normalization",
+        "audio_label": "Audio Overview",
+        "audio_sub": "The Living Book",
+        "notebook_label": "Interactive Notebook",
         "copyright": "© 2026 POLIS PROTOCOL FOUNDATION. ALL RIGHTS RESERVED.",
         "motto": "FROM GREECE, FOR THE WORLD."
     },

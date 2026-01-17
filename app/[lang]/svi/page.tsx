@@ -25,14 +25,14 @@ export default async function SVIPage({ params }: { params: Promise<{ lang: stri
                     </h2>
                     <p className="text-center text-white/40 mb-12 uppercase tracking-[0.2em] text-xs shrink-0">{content.dimensions_intro}</p>
                     <div className="grid md:grid-cols-2 gap-6">
-                        {content.dimensions.map((dim: any, i: number) => (
+                        {content.dimensions.map((dim, i) => (
                             <div key={i} className="glass p-10 rounded-[40px] border-white/5 hover:bg-white/[0.03] transition-colors relative overflow-hidden group">
                                 <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity">
                                     <span className="text-8xl font-black text-white">{dim.title[0]}</span>
                                 </div>
                                 <h3 className="text-xl font-bold text-polis-accent mb-6 uppercase tracking-wider">{dim.title}</h3>
                                 <ul className="space-y-4">
-                                    {dim.items.map((item: any, j: number) => (
+                                    {dim.items.map((item, j) => (
                                         <li key={j} className="flex items-start gap-4 text-white/60 text-sm leading-relaxed">
                                             <span className="inline-block w-4 h-[2px] bg-polis-accent/40 mt-2 shrink-0" />
                                             {item}
@@ -49,7 +49,7 @@ export default async function SVIPage({ params }: { params: Promise<{ lang: stri
                     <p className="text-polis-accent/80 text-lg font-medium mb-12">{content.changes_intro}</p>
 
                     <div className="space-y-12">
-                        {content.scenarios.map((scenario: any, i: number) => (
+                        {content.scenarios.map((scenario, i) => (
                             <div key={i} className="bg-black/40 p-10 rounded-[40px] border border-white/5">
                                 <h3 className="text-xl font-black text-white mb-6 uppercase tracking-widest flex items-center gap-4">
                                     <span className={`w-3 h-3 rounded-full ${i === 0 ? 'bg-red-500' : 'bg-green-500'}`} />

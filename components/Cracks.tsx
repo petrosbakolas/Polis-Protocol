@@ -2,8 +2,9 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { Dictionary } from "@/app/types/dictionary";
 
-export function Cracks({ dict }: { dict: any }) {
+export function Cracks({ dict }: { dict: Dictionary["deficits"] }) {
     const cards = [
         { ...dict.wisdom, icon: "🏛️" },
         { ...dict.care, icon: "💖" },

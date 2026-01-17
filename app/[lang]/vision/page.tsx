@@ -16,7 +16,7 @@ export default async function VisionPage({ params }: { params: Promise<{ lang: s
                     </p>
                 </section>
 
-                {content.sections.map((section: any, idx: number) => (
+                {content.sections.map((section, idx) => (
                     <section key={idx} className="space-y-8">
                         <h2 className="text-3xl font-black text-white hover:text-polis-accent transition-colors duration-300 uppercase tracking-widest border-l-4 border-polis-accent pl-6">
                             {section.title}
@@ -27,7 +27,7 @@ export default async function VisionPage({ params }: { params: Promise<{ lang: s
 
                         {section.items && (
                             <div className="grid gap-6 mt-12">
-                                {section.items.map((item: any, i: number) => (
+                                {section.items.map((item, i) => (
                                     <div key={i} className="glass p-8 rounded-3xl border-white/5 bg-white/[0.02] hover:bg-polis-accent/5 transition-all duration-300">
                                         <h3 className="text-xl font-bold text-polis-accent mb-4 uppercase tracking-wider">{item.label}</h3>
                                         <p className="text-white/60 leading-relaxed">

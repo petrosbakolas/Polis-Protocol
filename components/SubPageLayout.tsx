@@ -5,10 +5,11 @@ import { motion } from "framer-motion";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
 import Link from "next/link";
+import { Dictionary } from "@/app/types/dictionary";
 
 interface SubPageLayoutProps {
     lang: string;
-    dict: any;
+    dict: Dictionary;
     children: React.ReactNode;
     title: string;
     subtitle?: string;

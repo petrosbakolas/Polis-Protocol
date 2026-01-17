@@ -4,8 +4,9 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { Dictionary } from "@/app/types/dictionary";
 
-export function Header({ lang, dict }: { lang: string; dict: any }) {
+export function Header({ lang, dict }: { lang: string; dict: Dictionary["header"] }) {
     return (
         <motion.header
             initial={{ y: -100, opacity: 0 }}

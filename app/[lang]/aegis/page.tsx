@@ -16,13 +16,13 @@ export default async function AegisPage({ params }: { params: Promise<{ lang: st
                     </div>
                 </section>
 
-                {content.sections.map((section: any, i: number) => (
+                {content.sections.map((section, i) => (
                     <section key={i}>
                         <h2 className="text-3xl font-black text-white mb-10 text-center uppercase tracking-widest">
                             {section.title}
                         </h2>
                         <div className="grid gap-8">
-                            {section.items.map((item: any, j: number) => (
+                            {section.items.map((item, j) => (
                                 <div key={j} className="glass p-10 rounded-[40px] border-white/5 hover:border-polis-accent/20 transition-all group">
                                     <h3 className="text-xl font-bold text-polis-accent mb-6 group-hover:translate-x-2 transition-transform">
                                         {item.label}

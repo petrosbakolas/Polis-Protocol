@@ -7,6 +7,7 @@ import { Tokens } from "@/components/Tokens";
 import { Library } from "@/components/Library";
 import { Footer } from "@/components/Footer";
 import { getDictionary } from "../get-dictionary";
+import { PrivacyDepthGauge } from "@/components/PrivacyDepthGauge";
 
 export default async function Home({ params }: { params: Promise<{ lang: string }> }) {
     const { lang } = await params;
@@ -14,6 +15,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
 
     return (
         <main className="bg-polis-primary selection:bg-polis-accent selection:text-polis-primary">
+            <PrivacyDepthGauge />
             <Header lang={lang} dict={dict.header} />
             <div id="hero"><Hero dict={dict.hero} lang={lang} /></div>
             <div id="cracks"><Cracks dict={dict.deficits} /></div>

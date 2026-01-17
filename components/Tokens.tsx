@@ -2,8 +2,9 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { Dictionary } from "@/app/types/dictionary";
 
-export function Tokens({ dict }: { dict: any }) {
+export function Tokens({ dict }: { dict: Dictionary["tokens"] }) {
     return (
         <section className="py-24 relative overflow-hidden">
             <div className="container mx-auto px-6">

@@ -70,10 +70,14 @@
         "manifesto_button": "Διάβασε"
     },
     "footer": {
-        "join_title": "ΓΙΝΕ ΜΕΛΟΣ ΤΗΣ ΟΜΟΣΠΟΝΔΙΑΣ",
-        "join_desc": "Η επανάσταση ξεκινά με μια εγγραφή.",
-        "placeholder": "architect@polisprotocol.org",
-        "join_button": "ΣΥΜΜΕΤΟΧΗ",
+        "oracle_title": "ΤΟ ΜΑΝΤΕΙΟ",
+        "oracle_placeholder": "Ρώτησε το Πρωτόκολλο... (π.χ. Πώς λύνει το CareCoin τον πληθωρισμό;)",
+        "simulations_label": "ΕΚΤΕΛΕΣΗ ΠΡΟΣΟΜΟΙΩΣΕΩΝ",
+        "simulation_demcoin": "Θεωρία Παιγνίων DemCoin",
+        "simulation_text": "Κανονικοποίηση Κειμένου",
+        "audio_label": "Ηχητική Επισκόπηση",
+        "audio_sub": "Το Ζωντανό Βιβλίο",
+        "notebook_label": "Διαδραστικό Σημειωματάριο",
         "copyright": "© 2026 POLIS PROTOCOL FOUNDATION. ΟΛΑ ΤΑ ΔΙΚΑΙΩΜΑΤΑ ΚΑΤΟΧΥΡΩΜΕΝΑ.",
         "motto": "ΑΠΟ ΤΗΝ ΕΛΛΑΔΑ, ΓΙΑ ΤΟΝ ΚΟΣΜΟ."
     },

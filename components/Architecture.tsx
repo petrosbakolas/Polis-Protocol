@@ -3,14 +3,15 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { Dictionary } from "@/app/types/dictionary";
 
-const getSteps = (dict: any) => [
+const getSteps = (dict: Dictionary["architecture"]) => [
     { id: "aegis", label: dict.aegis.title, subtitle: dict.aegis.subtitle, desc: dict.aegis.desc, icon: "🛡️" },
     { id: "dual-token", label: dict.dual_token.title, subtitle: dict.dual_token.subtitle, desc: dict.dual_token.desc, icon: "⚖️" },
     { id: "svi", label: dict.svi.title, subtitle: dict.svi.subtitle, desc: dict.svi.desc, icon: "📊" },
 ];
 
-export function Architecture({ dict, lang }: { dict: any; lang: string }) {
+export function Architecture({ dict, lang }: { dict: Dictionary["architecture"]; lang: string }) {
     return (
         <section className="py-24 relative">
             <div className="container mx-auto px-6">

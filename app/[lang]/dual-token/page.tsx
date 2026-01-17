@@ -28,7 +28,7 @@ export default async function DualTokenPage({ params }: { params: Promise<{ lang
                             <div>
                                 <h4 className="text-white/40 text-xs font-bold uppercase tracking-[0.3em] mb-6">How you earn it</h4>
                                 <ul className="space-y-4">
-                                    {content.demcoin.how_earn_list.map((item: any, i: number) => (
+                                    {content.demcoin.how_earn_list.map((item, i) => (
                                         <li key={i} className="flex items-center gap-4 text-white/80">
                                             <span className="w-1.5 h-1.5 bg-polis-accent rounded-full shrink-0" />
                                             {item}
@@ -63,7 +63,7 @@ export default async function DualTokenPage({ params }: { params: Promise<{ lang
                             <div>
                                 <h4 className="text-white/40 text-xs font-bold uppercase tracking-[0.3em] mb-6">How you earn it</h4>
                                 <ul className="space-y-4">
-                                    {content.carecoin.how_earn_list.map((item: any, i: number) => (
+                                    {content.carecoin.how_earn_list.map((item, i) => (
                                         <li key={i} className="flex items-center gap-4 text-white/80">
                                             <span className="w-1.5 h-1.5 bg-green-500 rounded-full shrink-0" />
                                             {item}
@@ -74,7 +74,7 @@ export default async function DualTokenPage({ params }: { params: Promise<{ lang
                             <div>
                                 <h4 className="text-white/40 text-xs font-bold uppercase tracking-[0.3em] mb-6">{content.carecoin.different_text}</h4>
                                 <div className="space-y-4">
-                                    {content.carecoin.different_items.map((item: any, i: number) => (
+                                    {content.carecoin.different_items.map((item, i) => (
                                         <div key={i} className="flex gap-4">
                                             <span className="text-green-500 font-black">→</span>
                                             <p className="text-sm text-white/60">
@@ -96,7 +96,7 @@ export default async function DualTokenPage({ params }: { params: Promise<{ lang
                     <h2 className="text-3xl font-black text-white mb-8 uppercase tracking-widest">{content.together_title}</h2>
                     <p className="text-white/60 mb-12 uppercase tracking-[0.2em] text-sm">{content.together_intro}</p>
                     <div className="grid md:grid-cols-2 gap-8 mb-16">
-                        {content.together_items.map((item: any, i: number) => (
+                        {content.together_items.map((item, i) => (
                             <div key={i} className="glass p-8 rounded-3xl bg-black/40">
                                 <h4 className="text-lg font-bold text-white mb-4">{item.label}</h4>
                                 <p className="text-white/50 text-sm leading-relaxed">{item.text}</p>

@@ -3,8 +3,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { Dictionary } from "@/app/types/dictionary";
 
-export function Library({ dict, lang }: { dict: any; lang: string }) {
+export function Library({ dict, lang }: { dict: Dictionary["library"]; lang: string }) {
     return (
         <section className="py-24 bg-black/20">
             <div className="container mx-auto px-6">
