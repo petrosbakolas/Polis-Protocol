@@ -62,13 +62,13 @@ export function PrivacyDepthGauge() {
             >
                 <motion.div
                     animate={depthState === "veil" ? {
-                        x: [0, -2, 2, -1, 0],
-                        filter: ["blur(0px)", "blur(1px)", "blur(0px)"],
-                    } : { x: 0, filter: "blur(0px)" }}
+                        opacity: [0.8, 1, 0.8],
+                        scale: [0.98, 1.02, 0.98]
+                    } : { opacity: 1, scale: 1 }}
                     transition={depthState === "veil" ? {
                         repeat: Infinity,
-                        duration: 0.2,
-                        ease: "linear"
+                        duration: 3,
+                        ease: "easeInOut"
                     } : {}}
                     className="p-3 rounded-full border border-current bg-black/40 backdrop-blur-md relative overflow-hidden"
                 >
@@ -91,14 +91,13 @@ export function PrivacyDepthGauge() {
                             opacity: 1,
                             x: 0,
                             ...(depthState === "veil" ? {
-                                x: [0, -1, 1, 0],
-                                filter: ["blur(0px)", "blur(1.5px)", "blur(0px)"],
+                                opacity: [0.7, 1, 0.7]
                             } : {})
                         }}
                         transition={depthState === "veil" ? {
                             repeat: Infinity,
-                            duration: 0.15,
-                            ease: "linear"
+                            duration: 3,
+                            ease: "easeInOut"
                         } : { duration: 0.4 }}
                         className="absolute right-12 top-0 whitespace-nowrap text-right pointer-events-none"
                     >
