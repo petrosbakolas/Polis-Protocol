@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Dictionary } from "@/app/types/dictionary";
 import {
     Dices,
@@ -9,13 +9,18 @@ import {
     Network,
     Play,
     Pause,
-    ExternalLink,
-    BookOpen
+    ExternalLink
 } from "lucide-react";
 
 export function Footer({ dict }: { dict: Dictionary["footer"] }) {
     const [isPlaying, setIsPlaying] = React.useState(false);
+    const [oracleQuery, setOracleQuery] = React.useState("");
+    const [showToast, setShowToast] = React.useState(false);
     const audioRef = React.useRef<HTMLAudioElement | null>(null);
+
+    // Audio file availability - in a real app this might be dynamic
+    // but here we know audio.m4a exists.
+    const audioExists = true;
 
     const toggleAudio = () => {
         if (audioRef.current) {
@@ -28,11 +33,37 @@ export function Footer({ dict }: { dict: Dictionary["footer"] }) {
         }
     };
 
+    const handleOracleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        if (!oracleQuery.trim()) return;
+
+        // Clear input and show toast
+        setOracleQuery("");
+        setShowToast(true);
+
+        // Hide toast after 4 seconds
+        setTimeout(() => setShowToast(false), 4000);
+    };
+
     return (
         <footer className="py-24 border-t border-white/5 relative bg-[#0E2433] overflow-hidden">
             {/* Background Glow */}
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-polis-accent/5 blur-[120px] rounded-full pointer-events-none" />
             <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-polis-accent/5 blur-[120px] rounded-full pointer-events-none" />
+
+            {/* Oracle Toast Notification */}
+            <AnimatePresence>
+                {showToast && (
+                    <motion.div
+                        initial={{ opacity: 0, y: 50, x: "-50%" }}
+                        animate={{ opacity: 1, y: 0, x: "-50%" }}
+                        exit={{ opacity: 0, y: 20, x: "-50%" }}
+                        className="fixed bottom-12 left-1/2 z-[100] glass px-8 py-4 rounded-2xl border-polis-accent/50 text-polis-accent font-bold tracking-widest shadow-2xl shadow-polis-accent/20"
+                    >
+                        QUERY UPLINKED. TRANSMISSION RECEIVED.
+                    </motion.div>
+                )}
+            </AnimatePresence>
 
             <div className="container mx-auto px-6 relative z-10">
                 <div className="max-w-4xl mx-auto space-y-20">
@@ -65,18 +96,20 @@ export function Footer({ dict }: { dict: Dictionary["footer"] }) {
                                 className="absolute -inset-1 bg-polis-accent/30 rounded-2xl blur-md pointer-events-none group-hover:bg-polis-accent/50 transition-colors"
                             />
 
-                            <div className="relative glass rounded-2xl border-polis-accent/30 overflow-hidden">
+                            <form onSubmit={handleOracleSubmit} className="relative glass rounded-2xl border-polis-accent/30 overflow-hidden">
                                 <input
                                     type="text"
+                                    value={oracleQuery}
+                                    onChange={(e) => setOracleQuery(e.target.value)}
                                     placeholder={dict.oracle_placeholder}
                                     className="w-full bg-transparent px-8 py-8 md:py-10 text-xl md:text-2xl text-white placeholder:text-white/20 focus:outline-none focus:ring-1 focus:ring-polis-accent/50 transition-all font-light italic"
                                 />
-                                <div className="absolute right-8 top-1/2 -translate-y-1/2 hidden md:block">
+                                <button type="submit" className="absolute right-8 top-1/2 -translate-y-1/2 hidden md:block group-hover:scale-110 transition-transform">
                                     <div className="w-12 h-12 rounded-full border border-polis-accent/30 flex items-center justify-center text-polis-accent animate-pulse">
                                         <Network className="w-6 h-6" />
                                     </div>
-                                </div>
-                            </div>
+                                </button>
+                            </form>
                         </motion.div>
                     </div>
 
@@ -90,7 +123,7 @@ export function Footer({ dict }: { dict: Dictionary["footer"] }) {
                             <div className="h-[1px] flex-grow bg-white/10" />
                         </div>
 
-                        <div className="grid md:grid-cols-3 gap-6">
+                        <div className="grid md:grid-cols-2 gap-6">
                             {/* Simulation 1 */}
                             <a
                                 href="https://aistudio.google.com/u/1/apps/drive/1Y6gvo8Panh7RDaQHiK5RnBfkKKreRJzi?showPreview=true&showAssistant=true"
@@ -124,23 +157,6 @@ export function Footer({ dict }: { dict: Dictionary["footer"] }) {
                                 <h6 className="text-white font-bold mb-1 tracking-wide">{dict.simulation_text}</h6>
                                 <p className="text-white/30 text-[10px] uppercase tracking-widest font-bold">Lexical Engine v2.1</p>
                             </a>
-
-                            {/* NotebookLM */}
-                            <a
-                                href="https://notebooklm.google.com/notebook/c4481505-3fdc-4287-93e2-9c5d1c2f4f05?authuser=1"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="glass p-6 rounded-2xl border-white/5 hover:border-polis-accent/40 transition-all group hover:-translate-y-1"
-                            >
-                                <div className="flex items-center justify-between mb-4">
-                                    <div className="w-10 h-10 rounded-lg bg-polis-accent/10 flex items-center justify-center text-polis-accent">
-                                        <BookOpen className="w-5 h-5" />
-                                    </div>
-                                    <ExternalLink className="w-4 h-4 text-white/20 group-hover:text-polis-accent transition-colors" />
-                                </div>
-                                <h6 className="text-white font-bold mb-1 tracking-wide">{dict.notebook_label}</h6>
-                                <p className="text-white/30 text-[10px] uppercase tracking-widest font-bold">The Living Manuscript</p>
-                            </a>
                         </div>
                     </div>
 
@@ -152,7 +168,7 @@ export function Footer({ dict }: { dict: Dictionary["footer"] }) {
                         </div>
 
                         {/* Audio Wave Visualizer Placeholder */}
-                        <div className="flex items-center gap-1 h-12 w-32 shrink-0">
+                        <div className={`flex items-center gap-1 h-12 w-32 shrink-0 ${!audioExists && 'opacity-20'}`}>
                             {[...Array(12)].map((_, i) => (
                                 <motion.div
                                     key={i}
@@ -176,16 +192,22 @@ export function Footer({ dict }: { dict: Dictionary["footer"] }) {
                             ))}
                         </div>
 
-                        <button
-                            onClick={toggleAudio}
-                            className="w-16 h-16 rounded-full bg-polis-accent text-polis-primary flex items-center justify-center hover:scale-110 active:scale-95 transition-all shadow-lg shadow-polis-accent/20"
-                        >
-                            {isPlaying ? <Pause className="w-6 h-6 fill-current" /> : <Play className="w-6 h-6 fill-current ml-1" />}
-                        </button>
+                        {audioExists ? (
+                            <button
+                                onClick={toggleAudio}
+                                className="w-16 h-16 rounded-full bg-polis-accent text-polis-primary flex items-center justify-center hover:scale-110 active:scale-95 transition-all shadow-lg shadow-polis-accent/20"
+                            >
+                                {isPlaying ? <Pause className="w-6 h-6 fill-current" /> : <Play className="w-6 h-6 fill-current ml-1" />}
+                            </button>
+                        ) : (
+                            <div className="px-6 py-3 rounded-full border border-white/10 text-white/40 text-xs font-black uppercase tracking-widest">
+                                Coming Soon
+                            </div>
+                        )}
 
                         <audio
                             ref={audioRef}
-                            src="/audio_overview.mp3"
+                            src="/audio.m4a"
                             onEnded={() => setIsPlaying(false)}
                             className="hidden"
                         />
